@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Group Member Registration</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h2>Group Membership Registration</h2>
+
+    <!-- State Selection -->
+    <div class="form-group">
+      <label for="state">Select State:</label>
+      <select id="state" required>
+        <option value="">-- Select State --</option>
+        <option value="ogun">Ogun State</option>
+      </select>
+    </div>
+
+    <!-- LGA (activates after state) -->
+    <div class="form-group hidden" id="lga-group">
+      <label for="lga">Select Local Government:</label>
+      <select id="lga" required></select>
+    </div>
+
+    <!-- Ward (activates after LGA) -->
+    <div class="form-group hidden" id="ward-group">
+      <label for="ward">Select Ward:</label>
+      <select id="ward" required></select>
+    </div>
+
+    <!-- Polling Unit (activates after Ward) -->
+    <div class="form-group hidden" id="unit-group">
+      <label for="unit">Select Polling Unit:</label>
+      <select id="unit" required></select>
+    </div>
+
+    <!-- BioData (activates after Unit) -->
+    <form class="hidden" id="biodata-form">
+      <h3>Bio Data</h3>
+
+      <div class="form-group">
+        <label>Full Name:</label>
+        <input type="text" id="fullname" required />
+      </div>
+
+      <div class="form-group">
+        <label>Date of Birth:</label>
+        <input type="date" id="dob" required />
+      </div>
+
+      <div class="form-group">
+        <label>Age:</label>
+        <input type="text" id="age" disabled />
+      </div>
+
+      <div class="form-group">
+        <label>Phone Number:</label>
+        <input type="tel" id="phone" required />
+      </div>
+
+      <div class="form-group">
+        <label>Are you a registered voter?</label>
+        <select id="isVoter" required>
+          <option value="">-- Select --</option>
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+        </select>
+      </div>
+
+      <div class="form-group hidden" id="vin-group">
+        <label>Enter Voter Identification Number (VIN):</label>
+        <input type="text" id="vin" />
+      </div>
+
+      <div class="form-group">
+        <label>Are you a registered party member?</label>
+        <select id="isPartyMember" required>
+          <option value="">-- Select --</option>
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+        </select>
+      </div>
+
+      <div class="form-group hidden" id="party-id-group">
+        <label>Enter Party Membership ID:</label>
+        <input type="text" id="partyId" />
+      </div>
+
+      <div class="form-group">
+        <button type="submit">Register Member</button>
+      </div>
+
+      <!-- Admin only field -->
+      <div class="form-group hidden" id="timestamp-group">
+        <label>Registration Time (Admin Only):</label>
+        <input type="text" id="regTime" disabled />
+      </div>
+    </form>
+
+    <p class="note">
+      Only authorized Ward Secretaries or Chairmen can register members from their own ward.
+    </p>
+    <p><a href="admin.html">Go to Admin Dashboard</a></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
