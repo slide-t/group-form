@@ -1,5 +1,25 @@
 <script>
-  const loginForm = document.getElementById('adminLoginForm');
+  function loginAdmin() {
+  const username = document.getElementById("admin-username").value.trim();
+  const password = document.getElementById("admin-password").value.trim();
+  const errorMsg = document.getElementById("login-error");
+
+  // Get stored credentials or use default if not set
+  const validUsername = localStorage.getItem("adminUsername") || "gbedebiodun";
+  const validPassword = localStorage.getItem("adminPassword") || "onlyMe123";
+
+  if (username === validUsername && password === validPassword) {
+    errorMsg.textContent = "";
+    sessionStorage.setItem("isAdminLoggedIn", "true");
+    window.location.href = "dashboard.html"; // redirect to admin dashboard
+  } else {
+    errorMsg.textContent = "Invalid username or password. Try again!";
+  }
+}
+  
+  
+  
+  /*const loginForm = document.getElementById('adminLoginForm');
   const loginStatus = document.getElementById('loginStatus');
 
   // Set default password if none is set yet
@@ -26,7 +46,7 @@
     } else {
       loginStatus.textContent = "Invalid credentials!";
     }
-  });
+  });*/
 </script>
 
 
