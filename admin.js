@@ -18,7 +18,7 @@
   
   
   
-  /*const loginForm = document.getElementById('adminLoginForm');
+  const loginForm = document.getElementById('adminLoginForm');
   const loginStatus = document.getElementById('loginStatus');
 
   // Set default password if none is set yet
@@ -45,7 +45,7 @@
     } else {
       loginStatus.textContent = "Invalid credentials!";
     }
-  });*/
+  });
 </script>
 
 
