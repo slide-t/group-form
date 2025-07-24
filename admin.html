@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body class="admin-body">
+  
+  
   <div class="login-container">
     <h2>🔐 Admin Login</h2>
     <input type="text" id="admin-username" placeholder="Enter username" />
@@ -16,6 +18,33 @@
     <a href="recover-password.html">Forgot Password?</a>
   </div>
 
+  <h2>Change Admin Password</h2>
+<form id="changePasswordForm">
+  <label>Old Password:</label>
+  <input type="password" id="oldPass" required><br>
+  <label>New Password:</label>
+  <input type="password" id="newPass" required><br>
+  <button type="submit">Update Password</button>
+  <p id="changeStatus"></p>
+</form>
+
+<script>
+  document.getElementById("changePasswordForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const oldPass = document.getElementById("oldPass").value;
+    const newPass = document.getElementById("newPass").value;
+    const storedPass = localStorage.getItem("adminPassword") || "onlyMe123";
+    const status = document.getElementById("changeStatus");
+
+    if (oldPass === storedPass) {
+      localStorage.setItem("adminPassword", newPass);
+      status.textContent = "Password successfully changed!";
+    } else {
+      status.textContent = "Old password is incorrect.";
+    }
+  });
+</script>
   <script src="admin.js"></script>
 </body>
 </html>
