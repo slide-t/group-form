@@ -4,8 +4,8 @@ function loginAdmin() {
   const errorMsg = document.getElementById("login-error");
 
   // Replace with your actual credentials
-  const validUsername = "admin";
-  const validPassword = "admin123";
+  const validUsername = "gbedebiodun";
+  const validPassword = "onlyMe123";
 
   if (username === validUsername && password === validPassword) {
     errorMsg.textContent = "";
