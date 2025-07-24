@@ -49,11 +49,7 @@
 </script>
 
 
-
-
-
-
-/*
+<script>
 function loginAdmin() {
   const username = document.getElementById("admin-username").value.trim();
   const password = document.getElementById("admin-password").value.trim();
@@ -70,4 +66,4 @@ function loginAdmin() {
     errorMsg.textContent = "Invalid username or password. Try again!";
   }
 }
-*/
+  </script>
