@@ -3,10 +3,9 @@
   const username = document.getElementById("admin-username").value.trim();
   const password = document.getElementById("admin-password").value.trim();
   const errorMsg = document.getElementById("login-error");
-
   // Get stored credentials or use default if not set
-  const validUsername = localStorage.getItem("adminUsername") || "gbedebiodun";
-  const validPassword = localStorage.getItem("adminPassword") || "onlyMe123";
+  const validUsername = localStorage.getItem("adminUsername") || "admin";
+  const validPassword = localStorage.getItem("adminPassword") || "admin123";
 
   if (username === validUsername && password === validPassword) {
     errorMsg.textContent = "";
