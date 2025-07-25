@@ -50,7 +50,7 @@
 
 
 <script>
-function loginAdmin() {
+/*function loginAdmin() {
   const username = document.getElementById("admin-username").value.trim();
   const password = document.getElementById("admin-password").value.trim();
   const errorMsg = document.getElementById("login-error");
