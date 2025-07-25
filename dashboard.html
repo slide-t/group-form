@@ -4,6 +4,62 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="dashboard-body">
+  <header class="dashboard-header">
+    <h1>Admin Dashboard</h1>
+    <a href="index.html" class="btn back-btn"> Back to Registration</a>
+  </header>
+
+  <section class="access-control card">
+    <h2>Access Control</h2>
+    <div class="access-grid">
+      <div>
+        <label><input type="checkbox" id="access-chairman" /> Allow Ward Chairman</label>
+      </div>
+      <div>
+        <label><input type="checkbox" id="access-secretary" /> Allow Ward Secretary</label>
+      </div>
+    </div>
+    <button id="save-access" class="btn">Save Access Settings</button>
+    <p id="access-status" class="info"></p>
+  </section>
+
+  <section class="registrations card">
+    <h2>Registered Members</h2>
+    <div class="table-wrapper">
+      <table id="members-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Phone</th>
+            <th>Ward</th>
+            <th>Role</th>
+            <th>Timestamp</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </section>
+
+  <script src="admin.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Dashboard</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -93,7 +149,7 @@
       </tr>
     </thead>
     <tbody>
-      <!-- Dynamic content -->
+      <!-- Dynamic content --
     </tbody>
   </table>
 </div>
