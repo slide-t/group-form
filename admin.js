@@ -1,4 +1,44 @@
 <script>
+// Check session
+if (sessionStorage.getItem("isAdminLoggedIn") !== "true") {
+  window.location.href = "admin.html";
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  const tableBody = document.querySelector("#members-table tbody");
+  const members = JSON.parse(localStorage.getItem("members") || "[]");
+
+  members.forEach(member => {
+    const row = document.createElement("tr");
+    row.innerHTML = `
+      <td>${member.name}</td>
+      <td>${member.phone}</td>
+      <td>${member.ward}</td>
+      <td>${member.role}</td>
+      <td>${member.timestamp}</td>
+    `;
+    tableBody.appendChild(row);
+  });
+
+  document.getElementById("save-access").addEventListener("click", () => {
+    const chairman = document.getElementById("access-chairman").checked;
+    const secretary = document.getElementById("access-secretary").checked;
+    localStorage.setItem("accessControl", JSON.stringify({ chairman, secretary }));
+    document.getElementById("access-status").textContent = "Access settings saved.";
+  });
+
+  const access = JSON.parse(localStorage.getItem("accessControl") || "{}");
+  document.getElementById("access-chairman").checked = access.chairman || false;
+  document.getElementById("access-secretary").checked = access.secretary || false;
+});
+</script>
+
+
+
+
+
+
+<script>
   function loginAdmin() {
   const username = document.getElementById("admin-username").value.trim();
   const password = document.getElementById("admin-password").value.trim();
