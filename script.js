@@ -4,7 +4,9 @@ const data = {
     "Abeokuta North": {
       "Ikereku Ward-1": ["Ago Ododo Ojuferewa", "Idomapa", "Ikereku Abeke", "Ikereku Abeokuta",
             "Ikereku Ita Apahun", "Ikereku Oloti", "Ikereku Oke Eri", "Ilawo"],
+      
       "Ikija Ward-2": ["Adedotun", "AGO Odo-oke Eri", "Ikija", "Ilagun Isale Ogun"],
+      
       "Ita Iyalode": ["Iyalode Market", "Methodist Primary School"],
       "Totoro": ["Totoro Hall", "Lafenwa Primary School"],
       "Oke-Ago-Owu": ["Oke-Ago-Owu Hall", "CAC Primary School"] 
