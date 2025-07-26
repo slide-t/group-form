@@ -2,8 +2,8 @@
 const data = {
   ogun: {
     "Abeokuta North": {
-      "Ikereku Ward-1": ["Ago Ododo Ojuferewa ", "Idomapa", "Ikereku Abeke", "Ikereku Abeokuta",
-            "Ikereku Ita Apahun", "Ikereku Oloti", "Ikereku Oke Eri", "Ilawo"],
+      "Ikereku Ward-1": ["Ago Ododo Ojuferewa-PU1", "Idomapa-PU2", "Ikereku Abeke-PU3", "Ikereku Abeokuta-PU4",
+            "Ikereku Ita Apahun-PU5", "Ikereku Oloti-PU6", "Ikereku Oke Eri-PU7", "Ilawo-PU8"],
       "Ago-Oko": ["Ago-Oko Primary School", "Town Hall"],
       "Ita Iyalode": ["Iyalode Market", "Methodist Primary School"],
       "Totoro": ["Totoro Hall", "Lafenwa Primary School"],
