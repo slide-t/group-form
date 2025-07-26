@@ -1,7 +1,7 @@
 {
   "name": "Group Registration Form",
   "short_name": "GroupForm",
-  "start_url": "./index.html",
+  "start_url": "./",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#004080",
