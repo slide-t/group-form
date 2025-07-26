@@ -1,4 +1,4 @@
-const CACHE_NAME = 'group-form-v1.0.2'; // update this version on changes
+const CACHE_NAME = 'group-form-v1.1.2'; // update this version on changes
 const urlsToCache = [
   './',
   './index.html',
