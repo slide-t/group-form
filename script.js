@@ -21,10 +21,10 @@ const data = {
       "Ago-Oba": ["Ago-Oba Primary", "Central Mosque"]
     },
     "Ijebu Ode": {
-      "Isoku/Ososa": ["001 Beside Co-operative Building", "002 EMMANUEL SCHOOL I ITALUPE", " 003 MOSLEM SCHOOL, ISOKU", 
-                      "004 FRONT OF TALABI’S HOUSE OLISA STREET I", "005 IMORU ROAD JUNCTION", 
-                      "006 OKE-OLA ILORIN",  "007 EMMANUEL SCHOOL II", " 008 FRONT OF TALABI’S HOUSE OLISA STREET II",
-                     "009 ADJACENT A.B SUNMOLA HOUSE, IJAGUN ROAD", "010 BESIDE 3A’S HOTEL, IMORU ROAD", "011 MOSLEM SCHOOL II ONDO ROAD" ],
+      "Ward-1": ["Beside Co-operative Building-1-Ex", "EMMANUEL SCHOOL I ITALUPE-2 Ex", " MOSLEM SCHOOL, ISOKU-3 Ex", 
+                      "FRONT OF TALABI’S HOUSE OLISA STREET I-4 Ex", "IMORU ROAD JUNCTION-5 Ex", 
+                      "OKE-OLA ILORIN-6 Ex",  "EMMANUEL SCHOOL II-7 Ex", " FRONT OF TALABI’S HOUSE OLISA STREET II-8 Ex",
+                     "ADJACENT A.B SUNMOLA HOUSE, IJAGUN ROAD-9 New", "BESIDE 3A’S HOTEL, IMORU ROAD-10 New", "MOSLEM SCHOOL II ONDO ROAD-11 New" ],
       "Isoku": ["Isoku Central", "St. Thomas School"],
       "Porogun": ["Porogun Area A", "Porogun Area B"],
       "Ijasi": ["Ijasi Catholic", "Community Centre"],
