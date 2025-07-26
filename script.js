@@ -25,10 +25,14 @@ const data = {
                       "FRONT OF TALABI’S HOUSE OLISA STREET I-4 Ex", "IMORU ROAD JUNCTION-5 Ex", 
                       "OKE-OLA ILORIN-6 Ex",  "EMMANUEL SCHOOL II-7 Ex", " FRONT OF TALABI’S HOUSE OLISA STREET II-8 Ex",
                      "ADJACENT A.B SUNMOLA HOUSE, IJAGUN ROAD-9 New", "BESIDE 3A’S HOTEL, IMORU ROAD-10 New", "MOSLEM SCHOOL II ONDO ROAD-11 New" ],
-      "Isoku": ["Isoku Central", "St. Thomas School"],
-      "Porogun": ["Porogun Area A", "Porogun Area B"],
-      "Ijasi": ["Ijasi Catholic", "Community Centre"],
-      "Odo-Egbo": ["Egbo Primary School", "Odo-Egbo Central"]
+      "Ward-2": ["Isoku Central", "St. Thomas School"],
+      "Ward-3": ["Porogun Area A", "Porogun Area B"],
+      "Ward-4": ["Ijasi Catholic", "Community Centre"],
+     
+      "Ward-5": ["Egbo Primary School", "Odo-Egbo Central"],
+      "Ward-6": ["Egbo Primary School", "Odo-Egbo Central"]
+    "Ward-7": ["Egbo Primary School", "Odo-Egbo Central"]
+    
     },
 
 
