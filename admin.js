@@ -32,7 +32,50 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("access-secretary").checked = access.secretary || false;
 });
 </script>
+<!-- Add jsPDF library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  // ...existing code...
+
+  // Add event listener to the Print PDF button
+  document.querySelector(".print-btn").addEventListener("click", () => {
+    const { jsPDF } = window.jspdf;
+    const doc = new jsPDF();
+
+    const members = JSON.parse(localStorage.getItem("members") || "[]");
+
+    doc.setFontSize(16);
+    doc.text("qpqq - Member Data Preview", 14, 15);
+    doc.setFontSize(12);
+
+    let y = 25;
+    doc.text("Name", 14, y);
+    doc.text("Phone", 54, y);
+    doc.text("Ward", 94, y);
+    doc.text("Role", 134, y);
+    doc.text("Timestamp", 164, y);
+    y += 10;
+
+    members.forEach(member => {
+      doc.text(member.name || "", 14, y);
+      doc.text(member.phone || "", 54, y);
+      doc.text(member.ward || "", 94, y);
+      doc.text(member.role || "", 134, y);
+      doc.text(member.timestamp || "", 164, y);
+      y += 10;
+      if (y > 280) {
+        doc.addPage();
+        y = 20;
+      }
+    });
+
+    // Open in a new tab for preview
+    window.open(doc.output("bloburl"), "_blank");
+  });
+});
+</script>
 
 
 
