@@ -1,5 +1,5 @@
 // ✅ Updated real Ogun State LGA, Wards & Polling Units
-<script>
+
 const data = {
   ogun: {
     "Abeokuta North": {
@@ -414,8 +414,7 @@ function resetDropdown(dropdown) {
 function hideElement(el) {
   el.classList.add("hidden");
 }
-</script>
-<script>
+//Download pdf 
   document.getElementById("download-pdf-btn").addEventListener("click", () => {
     const username = prompt("Enter admin username:");
     const password = prompt("Enter admin password:");
@@ -476,4 +475,4 @@ function hideElement(el) {
       alert("❌ Incorrect login. Access denied.");
     }
   });
-</script>
+
