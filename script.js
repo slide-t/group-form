@@ -187,7 +187,16 @@ const data = {
   "Luba Comprehensive School Off Erunwon Road (New PU)",
   "Open Space Infront of Eid Praying Ground, Idobi (New PU)",
   "Open Space at New Road by Alafia Junction / Akiniganyin (New PU)"
-]
+],
+   "Ward-10": [
+  "Christ Church Pry. School – Isiwo (Existing PU)",
+  "Ayeteju Maternity (Existing PU)",
+  "Odo/Asoyin Pry. Sch. (Existing PU)",
+  "Okelisa (Opposite New Mosque) (Existing PU)",
+  "Odo Lofa (Existing PU)",
+  "St. Patrick School, Isiwo (Existing PU)",
+  "Ansarudeen High Sch, Isiwo (Existing PU)"
+]   
 
       
     },
