@@ -1,4 +1,5 @@
 // ✅ Updated real Ogun State LGA, Wards & Polling Units
+<script>
 const data = {
   ogun: {
     "Abeokuta North": {
@@ -413,3 +414,66 @@ function resetDropdown(dropdown) {
 function hideElement(el) {
   el.classList.add("hidden");
 }
+</script>
+<script>
+  document.getElementById("download-pdf-btn").addEventListener("click", () => {
+    const username = prompt("Enter admin username:");
+    const password = prompt("Enter admin password:");
+
+    if (username === "admin" && password === "admin123") {
+      const members = JSON.parse(localStorage.getItem("members") || "[]");
+
+      const htmlContent = `
+        <html>
+        <head>
+          <title>Member Data</title>
+          <style>
+            body { font-family: Arial, sans-serif; padding: 20px; }
+            h1 { text-align: center; color: #333; }
+            table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+            th, td { border: 1px solid #000; padding: 8px; text-align: left; font-size: 14px; }
+            th { background-color: #f0f0f0; }
+          </style>
+        </head>
+        <body>
+          <h1>Registered Members</h1>
+          <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Phone</th>
+                <th>Ward</th>
+                <th>Role</th>
+                <th>Timestamp</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${members.map(m => `
+                <tr>
+                  <td>${m.name}</td>
+                  <td>${m.phone}</td>
+                  <td>${m.ward}</td>
+                  <td>${m.role}</td>
+                  <td>${m.timestamp}</td>
+                </tr>
+              `).join("")}
+            </tbody>
+          </table>
+        </body>
+        </html>
+      `;
+
+      const blob = new Blob([htmlContent], { type: "text/html" });
+      const url = URL.createObjectURL(blob);
+
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = "MemberData.html"; // You can change this to MemberData.pdf with PDF conversion
+      a.click();
+
+      URL.revokeObjectURL(url);
+    } else {
+      alert("❌ Incorrect login. Access denied.");
+    }
+  });
+</script>
