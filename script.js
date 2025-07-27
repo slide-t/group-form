@@ -196,8 +196,20 @@ const data = {
   "Odo Lofa (Existing PU)",
   "St. Patrick School, Isiwo (Existing PU)",
   "Ansarudeen High Sch, Isiwo (Existing PU)"
-]   
-
+],
+      
+"Ward-11": [
+  "St. Alloysius Sch. Iloti (Existing PU)",
+  "Odosengolu (Existing PU)",
+  "Odo-Arewa Market (Existing PU)",
+  "Okenla Tomoba Pry. Sch. (Existing PU)",
+  "Local Government School Idale (Existing PU)",
+  "St. Joseph Odonoko (Existing PU)",
+  "St. Joseph School Odonoko (Existing PU)",
+  "Oke-Ako (Existing PU)",
+  "St. Anne’s School, Irawo (Existing PU)",
+  "Tomoba Village (Existing PU)"
+]
       
     },
 
