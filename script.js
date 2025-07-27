@@ -47,11 +47,6 @@ const data = {
     
     
     },
-ISTING PU
-
-002  PU
-
-0 PU
 
                   
 
