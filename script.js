@@ -47,13 +47,32 @@ const data = {
 "OPEN SPACE AT MOBORODE / GBELEGBUWA JUNCTION-007 New",
 "OPEN SPACE AT ITAPAKURA / OLODE JUNCTION-008 New"],
      
-      "Ward-5": ["Egbo Primary School", "Odo-Egbo Central"],
-      "Ward-6": ["Egbo Primary School", "Odo-Egbo Central"],
-    "Ward-7": ["Egbo Primary School", "Odo-Egbo Central"],
-      "Ward-8": ["Egbo Primary School", "Odo-Egbo Central"],
-      "Ward-9": ["Egbo Primary School", "Odo-Egbo Central"],
-    "Ward-10": ["Egbo Primary School", "Odo-Egbo Central"],
-    "Ward-11": ["Egbo Primary School", "Odo-Egbo Central"]
+      "Ward-5": [
+  "Front Of Olisa’s Palace (Existing PU)",
+  "Old Ijada Market (Existing PU)",
+  "Omoluwabi Pry. School Imepe (Existing PU)",
+  "Moslem Pry. Sch. Imepe (Existing PU)",
+  "U.N.A. Pry. Sch. Imepe (Existing PU)",
+  "Orunse Area (Existing PU)",
+  "Idomowo/Imose (Existing PU)",
+  "Wasimi Pry School (Existing PU)",
+  "Idele (Existing PU)",
+  "Ayeru/Ajegunle (Existing PU)",
+  "Ipamuren Mosque (Existing PU)",
+  "Beside Ramdat Hotel, Oguntuga St I-Ode (Existing PU)",
+  "Open Space At Oya Junction By Adelaja Str. (New PU)",
+  "Ajegunle / Ijada Street By Iya Adam Food Canteen (New PU)",
+  "Open Space By Satina Hotel, Off Ondo Road (New PU)",
+  "Open Space By Olorunosun / Satina Junction, Ondo Road (New PU)",
+  "Open Space At Orunse – Jaginrin Junction Imepe (New PU)",
+  "Open Space At Alhaji Sodiq Street Near Olatoye House By Cele (New PU)",
+  "Cele T-Junction By Kowa Hospital Off Ejinrin Road (New PU)",
+  "Open Space Front Of Bishop Court Ejinrin Road (New PU)",
+  "Carterpillar Junction Adefisan Road, Off Ejinrin Road (New PU)",
+  "Akintonde Plaza By Oyingbo Junction (New PU)",
+  "Front Of Halidu Mosque, Idele Junction (New PU)"
+],
+      
     
     
     
