@@ -21,11 +21,18 @@ const data = {
       "Ago-Oba": ["Ago-Oba Primary", "Central Mosque"]
     },
     "Ijebu Ode": {
-      "Ward-1": ["Beside Co-operative Building-1-Ex", "EMMANUEL SCHOOL I ITALUPE-2 Ex", " MOSLEM SCHOOL, ISOKU-3 Ex", 
-                      "FRONT OF TALABI’S HOUSE OLISA STREET I-4 Ex", "IMORU ROAD JUNCTION-5 Ex", 
-                      "OKE-OLA ILORIN-6 Ex",  "EMMANUEL SCHOOL II-7 Ex", " FRONT OF TALABI’S HOUSE OLISA STREET II-8 Ex",
+      "Ward-1": ["Beside Co-operative Building-1-Existing", "EMMANUEL SCHOOL I ITALUPE-2 Existing", " MOSLEM SCHOOL, ISOKU-3 Existing", 
+                      "FRONT OF TALABI’S HOUSE OLISA STREET I-4 Existing", "IMORU ROAD JUNCTION-5 Existing", 
+                      "OKE-OLA ILORIN-6 Existing",  "EMMANUEL SCHOOL II-7 Existing", " FRONT OF TALABI’S HOUSE OLISA STREET II-8 Existing",
                      "ADJACENT A.B SUNMOLA HOUSE, IJAGUN ROAD-9 New", "BESIDE 3A’S HOTEL, IMORU ROAD-10 New", "MOSLEM SCHOOL II ONDO ROAD-11 New" ],
-      "Ward-2": ["Isoku Central", "St. Thomas School"],
+      "Ward-2": ["BAPTIST DAY SCHOOL EREKO-001 Existing", "FRONT OF OUR LADY’S SCHOOL-002 Existing",
+                "FRONT OF ALHAJI KUKOYI’S HOUSE-3 Existing", "OPPOSITE ITAJANA MOSQUE-4 Existing",
+"STATE HOSPITAL-5 Existing", "DENTAL CENTRE-6 Existing",
+"BY ODO ESA PREMIER MOSQUE NEAR IDIROKO, OLISA-7 New",
+"SAKA ASHIRU JUNCTION VIA MAYOMAYO-8 New",
+"OPEN SPACE BY OLORUNGBEBE MOSQUE-9 New",
+"JIMILEYIN JUNCTION, ADJACENT IREPODUN MOSQUE-10 New",
+"OPEN SPACE AT OGUNTUGA FOUR JUNCTION-11 New"],
       "Ward-3": ["Porogun Area A", "Porogun Area B"],
       "Ward-4": ["Ijasi Catholic", "Community Centre"],
      
@@ -40,7 +47,13 @@ const data = {
     
     
     },
+ISTING PU
 
+002  PU
+
+0 PU
+
+                  
 
  
 
