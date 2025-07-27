@@ -45,9 +45,7 @@ const data = {
 "OTUBU MEMORIAL SCHOOL-004 Existing", "IYANRO MOSQUE-005 Existing",
 "OKE AJE, BACK OF AJAYI’S HOUSE-006 Existing",
 "OPEN SPACE AT MOBORODE / GBELEGBUWA JUNCTION-007 New",
-"OPEN SPACE AT ITAPAKURA / OLODE JUNCTION-008 New"
-
-       "],
+"OPEN SPACE AT ITAPAKURA / OLODE JUNCTION-008 New"],
      
       "Ward-5": ["Egbo Primary School", "Odo-Egbo Central"],
       "Ward-6": ["Egbo Primary School", "Odo-Egbo Central"],
