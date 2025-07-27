@@ -475,4 +475,37 @@ function hideElement(el) {
       alert("❌ Incorrect login. Access denied.");
     }
   });
+document.getElementById("register-btn").addEventListener("click", function (e) {
+  e.preventDefault();
 
+  const name = document.getElementById("name").value.trim();
+  const phone = document.getElementById("phone").value.trim();
+  const ward = document.getElementById("ward").value.trim();
+  const role = document.getElementById("role").value.trim();
+
+  if (!name || !phone || !ward || !role || !pollingUnit) {
+    alert("Please fill in all fields.");
+    return;
+  }
+
+  const member = {
+    name,
+    phone,
+    ward,
+    role,
+    timestamp: new Date().toLocaleString()
+  };
+
+  let members = JSON.parse(localStorage.getItem("members") || "[]");
+  members.push(member);
+  localStorage.setItem("members", JSON.stringify(members));
+
+  alert("Member registered successfully!");
+
+  // Optional: Reset form
+  document.getElementById("name").value = "";
+  document.getElementById("phone").value = "";
+  document.getElementById("ward").value = "";
+  document.getElementById("role").value = "";
+  document.getElementById("pollingUnit").value = "";
+});
