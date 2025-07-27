@@ -1,13 +1,14 @@
-const CACHE_NAME = 'group-form-v2.5.1'; // update this version on changes
+const CACHE_NAME = 'group-form-v2.5.2'; // update this version on changes
 const urlsToCache = [
   './',
-  './index.html',
+  './',
   './style.css', // include your stylesheet if any
   './script.js', // include your JS file
   './favicon.ico',
   './manifest.json',
   './admin.js',
   './dashboard.html',
+  './admin.html/,
 ];
 
 // Install event
