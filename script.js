@@ -163,8 +163,31 @@ const data = {
   "Open Space At Osifeso/Odutola Street, Ijebu Ode (New PU)",
   "C. A. C. School, Degun (2) (New PU)",
   "C.A.C Church By Post Office / C.M.S Bookshop Folagbade (New PU)"
+],
+      
+"Ward-9": [
+  "St. Augustine Catholic School (Existing PU)",
+  "A.U.D. Pry. Sch. I, Bonojo (Existing PU)",
+  "A.U.D. Pry. Sch. II, Onirugba (Existing PU)",
+  "Govt. Technical College (Existing PU)",
+  "Ezekiel Awoyelu Junction (Existing PU)",
+  "Beside Ijebu-Ode Stadium (Existing PU)",
+  "Tai Solarin College Of Education (Existing PU)",
+  "Old Odo Egbo Market (Existing PU)",
+  "Ahmadiyya Mosque (Existing PU)",
+  "K. Mansion (Existing PU)",
+  "Igbeba / Elebute Junction (New PU)",
+  "Bonjo / Odutola Street (New PU)",
+  "GRA Off Awujale Street (Middle) (New PU)",
+  "End of Bonojo Eleruku (New PU)",
+  "Olufowobi By Bonojo Four Junction (New PU)",
+  "Mahdiyat Primary School (New PU)",
+  "Adeben Place Hotel Junction, Igbeba (New PU)",
+  "V.I.O Centre, Eruwon Road (New PU)",
+  "Luba Comprehensive School Off Erunwon Road (New PU)",
+  "Open Space Infront of Eid Praying Ground, Idobi (New PU)",
+  "Open Space at New Road by Alafia Junction / Akiniganyin (New PU)"
 ]
-
 
       
     },
