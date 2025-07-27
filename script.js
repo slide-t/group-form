@@ -91,8 +91,28 @@ const data = {
   "Moslem Primary School, Molode (New PU)",
   "Open Space Agbaje Junction, By Transformer (New PU)",
   "Open Space At Alebiosu Street, Dupmos Junction (New PU)"
+],
+      
+    "Ward-7": [
+  "Front Of Babalola’s House (Existing PU)",
+  "Ijebu-Ode Grammar School (Existing PU)",
+  "Christ Church School, Porogun (Existing PU)",
+  "A.G.G.S. Obalende (Existing PU)",
+  "Abeokuta Road, Front Of Alowolodu (Existing PU)",
+  "Ogbagba Street (Middle, Front Of Alowonle) (Existing PU)",
+  "Italapo Mosque (Existing PU)",
+  "Middle Alapo Street (In Front Of Mosque) (Existing PU)",
+  "Abeokuta Road (In Front Of Olufowobi’s House) (Existing PU)",
+  "Fisigboye – Ehindin Junction By Ijebu-Ode Local Government Secretariat (New PU)",
+  "Open Space At Alatishe Mosque By Total Filling Station (New PU)",
+  "Degun Junction, Obalende (New PU)",
+  "Open Space Beside Obalende Police Station (New PU)",
+  "Open Space By Ogunbule Junction, Olorunsogo (New PU)",
+  "Open Space Lewu Junction Beside Seico House (New PU)",
+  "Omosanya Olaonipekun Junction, Off Degun (New PU)",
+  "Fidipote Junction, Off Fusigboye Road (New PU)",
+  "Open Space At Alafia / Jaura Church Junction (New PU)"
 ]
-    
     
     },
 
