@@ -61,14 +61,14 @@ th, td {
     display:;
   padding: 0.5rem 1rem;
 }
-.print-btn {
+/*.print-btn {
   padding: 0.5rem 1rem;
   background: #0077cc;
   color: #fff;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-}
+}*/
 a {
   text-decoration: none;
 }
