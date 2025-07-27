@@ -30,8 +30,14 @@ const data = {
       "Ward-4": ["Ijasi Catholic", "Community Centre"],
      
       "Ward-5": ["Egbo Primary School", "Odo-Egbo Central"],
-      "Ward-6": ["Egbo Primary School", "Odo-Egbo Central"]
-    "Ward-7": ["Egbo Primary School", "Odo-Egbo Central"]
+      "Ward-6": ["Egbo Primary School", "Odo-Egbo Central"],
+    "Ward-7": ["Egbo Primary School", "Odo-Egbo Central"],
+      "Ward-8": ["Egbo Primary School", "Odo-Egbo Central"],
+      "Ward-9": ["Egbo Primary School", "Odo-Egbo Central"],
+    "Ward-10": ["Egbo Primary School", "Odo-Egbo Central"],
+    "Ward-11": ["Egbo Primary School", "Odo-Egbo Central"]
+    
+    
     
     },
 
