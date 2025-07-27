@@ -73,7 +73,25 @@ const data = {
   "Front Of Halidu Mosque, Idele Junction (New PU)"
 ],
       
-    
+    "Ward-6": [
+  "Muslem College (Existing PU)",
+  "Opposite Apeloko (Existing PU)",
+  "Opposite L.G. Works Dept (Existing PU)",
+  "Beside Isasa Mosque (Existing PU)",
+  "Christ Church School Molode (Existing PU)",
+  "Ayegbami Wasimi Junction (Existing PU)",
+  "Ojofa / Alapo Junction (Existing PU)",
+  "Mobegelu Street (In Front Of Olowu’s House) (Existing PU)",
+  "Adeola Odutola College (Existing PU)",
+  "Local Government Maternity Centre (Existing PU)",
+  "Fidipote Adeola Junction (New PU)",
+  "Open Space At Ayegbami Abass Street Junction (New PU)",
+  "Open Space At Mukeke Junction By Moslem College Road (New PU)",
+  "Open Space At Middle Of Kaka Street, Tanimola Junction (New PU)",
+  "Moslem Primary School, Molode (New PU)",
+  "Open Space Agbaje Junction, By Transformer (New PU)",
+  "Open Space At Alebiosu Street, Dupmos Junction (New PU)"
+]
     
     
     },
