@@ -21,7 +21,52 @@ const data = {
       "Ago-Oba": ["Ago-Oba Primary", "Central Mosque"]
     },
     "Ijebu Ode": {
-      "Ward-1": ["Beside Co-operative Building-001-Existing", "EMMANUEL SCHOOL I ITALUPE-002 Existing", " MOSLEM SCHOOL, ISOKU-003 Existing", 
+      "Ward-1": [
+  "Beside Co-Operative Building (001 - Existing)",
+  "Emmanuel School I, Italupe (002 - Existing)",
+  "Moslem School, Isoku (003 - Existing)",
+  "Front of Talabi’s House, Olisa Street I (004 - Existing)",
+  "Imoru Road Junction (005 - Existing)",
+  "Oke-Ola Ilorin (006 - Existing)",
+  "Emmanuel School II (007 - Existing)",
+  "Front of Talabi’s House, Olisa Street II (008 - Existing)",
+  "Adjacent A.B Sunmola House, Ijagun Road (009 - New)",
+  "Beside 3A’s Hotel, Imoru Road (010 - New)",
+  "Moslem School II, Ondo Road (011 - New)"
+],
+"Ward-2": [
+  "Baptist Day School, Ereko (001 - Existing)",
+  "Front of Our Lady’s School (002 - Existing)",
+  "Front of Alhaji Kukoyi’s House (003 - Existing)",
+  "Opposite Itajana Mosque (004 - Existing)",
+  "State Hospital (005 - Existing)",
+  "Dental Centre (006 - Existing)",
+  "By Odo Esa Premier Mosque, Near Idiroko, Olisa (007 - New)",
+  "Saka Ashiru Junction via Mayomayo (008 - New)",
+  "Open Space by Olorungbebe Mosque (009 - New)",
+  "Jimileyin Junction, Adjacent Irepodun Mosque (010 - New)",
+  "Open Space at Oguntuga Four Junction (011 - New)"
+],
+"Ward-3": [
+  "Moslem School, Etitale I (001 - Existing)",
+  "Opp. Oloritun’s House (002 - Existing)",
+  "Front of Igboburo Mosque (003 - Existing)",
+  "Front of Balogun Kuku’s House (004 - Existing)",
+  "Isokun / Itaogbe Junction (005 - Existing)",
+  "Moslem School, Etitale II (006 - Existing)",
+  "Ahmmadiah Movement B/S, Araromi (007 - New)"
+],
+"Ward-4": [
+  "Old Wasimi School Hall (001 - Existing)",
+  "Joke Taiwo Pry. School (002 - Existing)",
+  "Balogun Kuku Road (003 - Existing)",
+  "Otubu Memorial School (004 - Existing)",
+  "Iyanro Mosque (005 - Existing)",
+  "Oke Aje, Back of Ajayi’s House (006 - Existing)",
+  "Open Space at Moborode / Gbelegbuwa Junction (007 - New)",
+  "Open Space at Itapakure / Olode Junction (008 - New)"
+],
+     /* "Ward-1": ["Beside Co-operative Building-001-Existing", "EMMANUEL SCHOOL I ITALUPE-002 Existing", " MOSLEM SCHOOL, ISOKU-003 Existing", 
                       "FRONT OF TALABI’S HOUSE OLISA STREET I-004 Existing", "IMORU ROAD JUNCTION-005 Existing", 
                       "OKE-OLA ILORIN-6 Existing",  "EMMANUEL SCHOOL II-007 Existing", " FRONT OF TALABI’S HOUSE OLISA STREET II-008 Existing",
                      "ADJACENT A.B SUNMOLA HOUSE, IJAGUN ROAD-009 New", "BESIDE 3A’S HOTEL, IMORU ROAD-010 New", "MOSLEM SCHOOL II ONDO ROAD-011 New" ],
@@ -45,7 +90,7 @@ const data = {
 "OTUBU MEMORIAL SCHOOL-004 Existing", "IYANRO MOSQUE-005 Existing",
 "OKE AJE, BACK OF AJAYI’S HOUSE-006 Existing",
 "OPEN SPACE AT MOBORODE / GBELEGBUWA JUNCTION-007 New",
-"OPEN SPACE AT ITAPAKURA / OLODE JUNCTION-008 New"],
+"OPEN SPACE AT ITAPAKURA / OLODE JUNCTION-008 New"],*/
      
       "Ward-5": [
   "Front Of Olisa’s Palace (Existing PU)",
