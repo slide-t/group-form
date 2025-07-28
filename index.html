@@ -2,6 +2,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <link rel="manifest" href="manifest.json">
   <title>Group Membership Registration</title>
   <style>
     body {
@@ -204,6 +205,15 @@
       doc.save("members.pdf");
     });
   
+  </script>
+  <script src="script.js"></script>
+
+  <script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('./service-worker.js')
+      .then(reg => console.log('Service Worker registered:', reg.scope))
+      .catch(err => console.error('Service Worker registration failed:', err));
+  }
   </script>
 </body>
 </html>
