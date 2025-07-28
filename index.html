@@ -1,3 +1,221 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Group Membership Registration</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    input, select, button {
+      width: 100%;
+      padding: 8px;
+      margin-top: 4px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    .hidden {
+      display: none;
+    }
+    .print-btn {
+      background: green;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Group Membership Registration</h2><div class="form-group">
+  <label for="state">Select State:</label>
+  <select id="state" required>
+    <option value="">-- Select State --</option>
+    <option value="ogun">Ogun State</option>
+  </select>
+</div>
+
+<div class="form-group hidden" id="lga-group">
+  <label for="lga">Select Local Government:</label>
+  <select id="lga" required></select>
+</div>
+
+<div class="form-group hidden" id="ward-group">
+  <label for="ward">Select Ward:</label>
+  <select id="ward" required></select>
+</div>
+
+<div class="form-group hidden" id="unit-group">
+  <label for="unit">Select Polling Unit:</label>
+  <select id="unit" required></select>
+</div>
+
+<form class="hidden" id="biodata-form">
+  <h3>Bio Data</h3>
+
+  <div class="form-group">
+    <label>Full Name:</label>
+    <input type="text" id="fullname" required />
+  </div>
+
+  <div class="form-group">
+    <label>Date of Birth:</label>
+    <input type="date" id="dob" required />
+  </div>
+
+  <div class="form-group">
+    <label>Age:</label>
+    <input type="text" id="age" disabled />
+  </div>
+
+  <div class="form-group">
+    <label>Phone Number:</label>
+    <input type="tel" id="phone" required />
+  </div>
+
+  <div class="form-group">
+    <label>Are you a registered voter?</label>
+    <select id="isVoter" required>
+      <option value="">-- Select --</option>
+      <option value="yes">Yes</option>
+      <option value="no">No</option>
+    </select>
+  </div>
+
+  <div class="form-group hidden" id="vin-group">
+    <label>Enter Voter Identification Number (VIN):</label>
+    <input type="text" id="vin" />
+  </div>
+
+  <div class="form-group">
+    <label>Are you a registered party member?</label>
+    <select id="isPartyMember" required>
+      <option value="">-- Select --</option>
+      <option value="yes">Yes</option>
+      <option value="no">No</option>
+    </select>
+  </div>
+
+  <div class="form-group hidden" id="party-id-group">
+    <label>Enter Party Membership ID:</label>
+    <input type="text" id="partyId" />
+  </div>
+
+  <div class="form-group">
+    <button type="submit" class="register-btn">Register Member</button>
+  </div>
+</form>
+
+<button class="print-btn" onclick="handlePrint()">Download PDF (Admin Only)</button>
+
+  </div> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js">
+ </script>
+  <script>
+    // JavaScript logic will be added here after this base structure is complete
+  const isPartyMember = document.getElementById("isPartyMember");
+    const partyIdGroup = document.getElementById("party-id-group");
+    const pollingUnitGroup = document.getElementById("pollingUnit-group");
+    const pollingUnit = document.getElementById("pollingUnit");
+    const bioData = document.getElementById("bioData");
+    const form = document.getElementById("registrationForm");
+    const table = document.getElementById("member-table").querySelector("tbody");
+    const memberTable = document.getElementById("member-table");
+
+    isPartyMember.addEventListener("change", () => {
+      if (isPartyMember.value === "yes") {
+        partyIdGroup.classList.remove("hidden");
+        pollingUnitGroup.classList.remove("hidden");
+      } else {
+        partyIdGroup.classList.add("hidden");
+        pollingUnitGroup.classList.add("hidden");
+        bioData.classList.add("hidden");
+      }
+    });
+
+    pollingUnit.addEventListener("change", () => {
+      if (pollingUnit.value) {
+        bioData.classList.remove("hidden");
+      } else {
+        bioData.classList.add("hidden");
+      }
+    });
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      const fullName = document.getElementById("fullName").value;
+      const phoneNumber = document.getElementById("phoneNumber").value;
+      const gender = document.getElementById("gender").value;
+      const unit = pollingUnit.value;
+      const members = JSON.parse(localStorage.getItem("members") || "[]");
+      members.push({ fullName, phoneNumber, gender, unit });
+      localStorage.setItem("members", JSON.stringify(members));
+      alert("Member Registered Successfully!");
+      form.reset();
+      partyIdGroup.classList.add("hidden");
+      pollingUnitGroup.classList.add("hidden");
+      bioData.classList.add("hidden");
+    });
+
+    document.getElementById("download-pdf-btn").addEventListener("click", () => {
+      const password = prompt("Enter admin password to download data:");
+      if (password !== "admin123") return alert("Access Denied");
+
+      const members = JSON.parse(localStorage.getItem("members") || "[]");
+      if (members.length === 0) return alert("No member data found.");
+
+      table.innerHTML = "";
+      members.forEach((m, i) => {
+        const row = document.createElement("tr");
+        row.innerHTML = `<td>${i + 1}</td><td>${m.fullName}</td><td>${m.phoneNumber}</td><td>${m.gender}</td><td>${m.unit}</td>`;
+        table.appendChild(row);
+      });
+      memberTable.classList.remove("hidden");
+
+      const { jsPDF } = window.jspdf;
+      const doc = new jsPDF({ orientation: "landscape" });
+      doc.text("Registered Members", 14, 10);
+      doc.autoTable({ html: "#member-table", startY: 20 });
+      doc.save("members.pdf");
+    });
+  
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+<!--
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,7 +229,7 @@
   <div class="container">
     <h2>Group Membership Registration</h2>
 
-    <!-- State Selection -->
+    <!-- State Selection --
     <div class="form-group">
       <label for="state">Select State:</label>
       <select id="state" required>
@@ -20,25 +238,25 @@
       </select>
     </div>
 
-    <!-- LGA (activates after state) -->
+    <!-- LGA (activates after state) --
     <div class="form-group hidden" id="lga-group">
       <label for="lga">Select Local Government:</label>
       <select id="lga" required></select>
     </div>
 
-    <!-- Ward (activates after LGA) -->
+    <!-- Ward (activates after LGA) --
     <div class="form-group hidden" id="ward-group">
       <label for="ward">Select Ward:</label>
       <select id="ward" required></select>
     </div>
 
-    <!-- Polling Unit (activates after Ward) -->
+    <!-- Polling Unit (activates after Ward) --
     <div class="form-group hidden" id="unit-group">
       <label for="unit">Select Polling Unit:</label>
       <select id="unit" required></select>
     </div>
 
-    <!-- BioData (activates after Unit) -->
+    <!-- BioData (activates after Unit) --
     <form class="hidden" id="biodata-form">
       <h3>Bio Data</h3>
 
@@ -98,7 +316,7 @@
 <button id="download-pdf-btn" style="background-color:#28a745; color:white; padding:10px 20px; border:none; border-radius:5px; cursor:pointer;">
   📥 Download Member Data (PDF)
 </button>
-      <!-- Admin only field -->
+      <!-- Admin only field --
       <div class="form-group hidden" id="timestamp-group">
         <label>Registration Time (Admin Only):</label>
         <input type="text" id="regTime" disabled />
@@ -110,7 +328,8 @@
     </p>
     <p><a href="admin.html">Go to Admin Dashboard</a></p>
   </div>
-  <!-- Hidden PDF Section (Shown after successful admin login) -->
+  
+  <!-- Hidden PDF Section (Shown after successful admin login) --
 <div id="pdf-section" class="hidden">
   <h2>Registered Members</h2>
   <table id="pdf-table" style="width: 100%; border-collapse: collapse;">
@@ -126,7 +345,7 @@
       </tr>
     </thead>
     <tbody id="pdf-table-body">
-      <!-- Filled dynamically -->
+      <!-- Filled dynamically --
     </tbody>
   </table>
 </div>
@@ -141,7 +360,7 @@
     <p id="login-error" style="color:red;display:none;margin-top:5px;">Invalid credentials!</p>
   </div>
 </div>
-  -->
+  
   
 <div id="welcomeModal" class="modal-overlay">
   <div class="modal-content">
